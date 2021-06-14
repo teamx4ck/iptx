@@ -1,0 +1,29 @@
+#!/bin/python
+import sys,os
+from urllib import request as r
+try:
+	ip=sys.argv[1]
+except:
+	print('Write : iptx <target ip>','\033[0m')
+	sys.exit()
+url='http://ip-api.com/json/'
+print('Please Wait\nIPTX is Starting.....')
+try:
+	json=r.urlopen(url+ip).read()
+except:
+	print('Check your internet connection!')
+	sys.exit()
+json=eval(json)
+print('Victem : '+ip)
+print('ISP : '+json['isp'])
+print('Organisation : '+json['org'])
+print('City : '+json['city'])
+print('Region Name : '+json['regionName'])
+print('Region : '+json['region'])
+print('Longitude : '+str(json['lon']))
+print('Latitude : '+str(json['lat']))
+print('Country : '+json['country'])
+print('Country Code : '+json['countryCode'])
+print('AS : '+json['as'])
+print('Time zone : '+json['timezone'])
+print('Zip code : '+json['zip'],'\n')
