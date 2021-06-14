@@ -25,11 +25,14 @@ bash setup.sh
 $ iptx <target ip>
 
 ```
+# Made For
+* Termux
+
 # author :
 * Rakib Hossain
 
 # Cradit
 * https://ip-api.com
 
-#Description
+# Description
 * This is a python based tool for scaning ip. This tool can scan ISP,City,Country,Zip code etc. of Victem Ip.
