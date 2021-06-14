@@ -13,6 +13,8 @@ apt install git
 
 apt install python
 
+pip install requests
+
 git clone https://www.github.com/teamx4ck/iptx
 
 cd iptx
